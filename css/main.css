@@ -1,0 +1,348 @@
+@charset "utf-8";
+/* CSS Document */
+
+#container
+{
+	width: 100%;
+	height: 1500px;
+	background-color: #F4DED3;
+}
+.slide
+{
+	width: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #f1f1f1;
+  font-family: "Bahnschrift";
+text-decoration-color: #365773;
+}
+
+#navbar {
+  background-color: #365773;
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+	z-index: 1000;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #F7AA4E;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+font-family: "Bahnschrift";
+}
+
+#navbar a:hover {
+  background-color: #F4DED3;
+  color: #365773;
+    font-weight: bold
+}
+
+/*slide*/
+
+* {box-sizing: border-box}
+body {font-family: "Bahnschrift";; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width : 1643px ){
+  .prev, .next,.text {font-size: 11px}
+}
+
+.box2
+{width: 100%;
+height: 28%;
+background-color: #F7AA4E;
+margin-top: -5vh;
+display: flex;
+  justify-content: center;
+  align-items: center}
+
+.box2content 
+{
+width: 45%;
+height: 28%;
+    padding: 30px;
+    background-color: #F7AA4E;
+    float: left;
+    box-sizing: border-box;
+    align-content: space-between;
+    color: #365773
+}
+
+.box2line
+{width: 100%;
+height: 10%;
+background-color: #F7AA4E;
+display: flex;
+justify-content: center;
+align-items: center
+}
+
+.box2linetext
+{width: 50%;
+height: 10%;
+    background-color: #F7AA4E; 
+    text-align:center;
+    color: #365773
+}
+
+.buttoncontent
+{width: 100%;
+height: 150px;
+    background-color: #F4DED3;
+display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button
+{
+height: 50px;
+background-color: #365773;
+float:left;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 15%;
+margin: 5px;
+padding: 15px;
+color: #F7AA4E;
+text-decoration: none;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+
+.button:hover
+{background-color: #DDB5B4;
+color:#365773
+}
+
+.tea
+{
+	width: 100%;
+	height: 700px;
+	background-color: #F7AA4E;
+	  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tea_item
+{
+	width: 25%;
+	height: 550px;
+	background-color:#F4DED3;
+	float: left;
+	margin: 1%;
+	text-align: center;
+	overflow: hidden;
+    padding: 5px;
+    color:#365773
+}
+
+.tea_item img
+{
+	 transform: scale(1);
+	transition:all .5s ease;
+}
+
+.tea_item:hover img
+{
+	 transform: scale(1.2);
+}
+
+.LIST
+{widows: 100%;
+height: 600px;
+background-color: #F4DED3;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+.LIST_item
+{width: 20%;
+height: 500px;
+background-color: #365773;
+float: left;
+margin: 5px;
+text-transform: uppercase;
+font-size: 18px;
+position: relative;
+color: #F7AA4E;
+}
+
+
+button
+{height: 30px;
+width: 80px;
+border-radius: 60px;
+border: 0px;
+    background-color: #F4DED3
+}
+
+.label
+{width: 120px;
+height: 50px;
+position: absolute;
+top: 30%;
+left:35%;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.icon
+{width: 50px;
+height: 50px;
+border-radius: 100%;
+background-color: #F4DED3;
+float: left;
+margin: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.LIST_item img
+{opacity: 1}
+
+.LIST_item:hover img
+{opacity: 0.7}
+
+.LIST_item .icon
+{opacity: 0;
+transition: all 0.3s linear}
+
+.LIST_item:hover .icon
+{opacity: 1}
+
+.Line_image
+{width: 100%;
+height: 28%;
+background-image: url("../images/NUMBER5.jpg");
+background-size: cover;
+}
+
+.map
+{
+	width: 100%;
+	height: 600px;	
+}
+
+.map_left
+{
+	width: 50%;
+	height: 800px;
+	background-color:#365773;	
+	float: left;
+}
+.map_row
+{
+	width: 100%;
+	height: 60px;
+	padding: 20px 70px;
+	color: #F4DED3;
+    box-sizing: border-box; display: flex;
+  align-items: center;
+}
+
+input
+{
+	width: 500px;
+	height: 50px;
+	padding: 10px 20px;
+	color:#737373;
+	background-color:#365773;
+	color: #F4DED3;
+}
+
+
+a {text-decoration: none}
